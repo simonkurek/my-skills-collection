@@ -15,8 +15,17 @@
         "email": "simonkurekpl@gmail.com"
       },
       "category": "workflow",
-      "keywords": ["ddd", "domain-modeling", "archetypes", "bounded-context", "event-storming", "architecture"],
-      "source": "./plugins/archetype-modeling"
+      "keywords": [
+        "ddd",
+        "domain-modeling",
+        "archetypes",
+        "bounded-context",
+        "event-storming",
+        "architecture"
+      ],
+      "source": "./plugins/archetype-modeling",
+      "homepage": "https://github.com/simonkurek/my-skills-collection/tree/main/plugins/archetype-modeling",
+      "repository": "https://github.com/simonkurek/my-skills-collection"
     }
   ]
 }
