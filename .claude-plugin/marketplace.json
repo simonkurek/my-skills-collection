@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "my-skills-collection",
+  "description": "Domain modeling skills for Claude Code: software archetype mappers (accounting, pricing), an archetype scanner, an archetype skill builder, and a bounded-context distiller.",
+  "owner": {
+    "name": "Szymon Kurek",
+    "email": "simonkurekpl@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "archetype-modeling",
+      "description": "Map domain requirements onto software archetypes and distill bounded contexts. Includes the accounting and pricing (valuation) archetype mappers, a parallel scanner that tests requirements against every known archetype, a builder that extracts new mapper skills from reference implementations and training material, and a context distiller that finds safe generalizations across domain concepts.",
+      "author": {
+        "name": "Szymon Kurek",
+        "email": "simonkurekpl@gmail.com"
+      },
+      "category": "workflow",
+      "keywords": ["ddd", "domain-modeling", "archetypes", "bounded-context", "event-storming", "architecture"],
+      "source": "./plugins/archetype-modeling"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "archetype-modeling",
+  "description": "Map domain requirements onto software archetypes and distill bounded contexts. Includes the accounting and pricing (valuation) archetype mappers, a parallel scanner that tests requirements against every known archetype, a builder that extracts new mapper skills from reference implementations and training material, and a context distiller that finds safe generalizations across domain concepts.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Szymon Kurek",
+    "email": "simonkurekpl@gmail.com"
+  },
+  "keywords": ["ddd", "domain-modeling", "archetypes", "bounded-context", "event-storming", "architecture"]
+}
