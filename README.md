@@ -7,7 +7,7 @@ software archetypes, and distilling bounded contexts.
 
 ```bash
 # in Claude Code
-/plugin marketplace add szymonkurek/my-skills-collection
+/plugin marketplace add simonkurek/my-skills-collection
 /plugin install archetype-modeling@my-skills-collection
 ```
 
