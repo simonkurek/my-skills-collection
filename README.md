@@ -21,7 +21,7 @@ To develop against a local checkout instead:
 
 | Plugin | Skills | What it does |
 |--------|--------|--------------|
-| [`archetype-modeling`](plugins/archetype-modeling) | 5 | Archetype mappers, a parallel archetype scanner, a mapper-skill builder, and a bounded-context distiller |
+| [`archetype-modeling`](plugins/archetype-modeling) | 13 | Archetype mappers, a parallel archetype scanner, a mapper-skill builder, and a bounded-context distiller |
 
 ## Repository layout
 

@@ -1,6 +1,6 @@
 ---
 name: archetype-scanner
-description: Scan domain requirements against all known archetypes in parallel. Launches one agent per archetype (accounting, pricing, party — extensible), collects fit/no-fit results, then merges into a single summary. Produces fit/ directory with individual archetype results and a combined report.
+description: Scan domain requirements against all known archetypes in parallel. Launches one agent per archetype (accounting, pricing, party, ordering, product, plan-vs-execution, graphs, quantity, inventory — extensible), collects fit/no-fit results, then merges into a single summary. Produces fit/ directory with individual archetype results and a combined report.
 argument-hint: "[domain requirements or feature description]"
 ---
 
@@ -32,6 +32,14 @@ Each entry maps to an existing `*-archetype-mapper` skill. To add a new archetyp
 |----|-----------|----------------------|
 | `accounting` | `accounting-archetype-mapper` | "Can I ask 'how much X does S have?' and get a number with transaction history?" |
 | `pricing` | `pricing-archetype-mapper` | "Is there a computed price/rate that depends on context, time, or components?" |
+| `party` | `party-archetype-mapper` | "Do different parties (people and organizations) play several roles, relate to each other, or change role by context?" |
+| `roles` | `roles-archetype-mapper` | "Can I ask 'what does subject S count as here — on its own, toward whom, in which process — and may S hold that?' and does the answer change over time without a release?" |
+| `ordering` | `ordering-archetype-mapper` | "Does someone submit an intent that must be confirmed and fulfilled, with parties in roles and agreed terms that must be recorded?" |
+| `product` | `product-archetype-mapper` | "Is there something we offer, perform or settle that has a definition separate from its occurrences — with variants, rules and operational or financial consequences?" |
+| `plan-vs-execution` | `plan-vs-execution-archetype-mapper` | "Is there a record of what should happen, kept apart from a record of what did happen, and does the business ask how far apart they are and what to do about it?" |
+| `graphs` | `graphs-archetype-mapper` | "Does the outcome depend more on the arrangement of connections between things (cycles, paths, zones, order, connectors) than on a list of steps?" |
+| `quantity` | `quantity-archetype-mapper` | "Is there a number that means nothing without its unit of measure, with rules (precision, rounding, allowed operations, conversion) attached to the unit rather than to the number?" |
+| `inventory` | `inventory-archetype-mapper` | "Can I ask 'can we commit resource R — a specimen, an amount, or a time window — to S right now, and who holds it?' and does the answer change as others claim and release it?" |
 
 When this collection is installed as a plugin, skills are invoked plugin-qualified — `archetype-modeling:accounting-archetype-mapper`. The bare names above are the skill ids; prefix them with `archetype-modeling:` when the plugin is installed.
 
@@ -61,6 +69,12 @@ fit/
 ├── accounting.md      # (only if fit)
 ├── pricing.md         # (only if fit)
 ├── party.md           # (only if fit)
+├── ordering.md        # (only if fit)
+├── product.md         # (only if fit)
+├── plan-vs-execution.md  # (only if fit)
+├── graphs.md          # (only if fit)
+├── quantity.md        # (only if fit)
+├── inventory.md       # (only if fit)
 └── summary.md         # always — merged result
 ```
 
